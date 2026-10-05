@@ -8,6 +8,7 @@
     android:background="@drawable/bg"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/txtUsername"
         android:layout_width="86dp"
