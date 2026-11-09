@@ -10,6 +10,8 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import com.example.iqbal_3tib.Home.Pertemuan5.LimaActivity
 import com.example.iqbal_3tib.Home.Pertemuan6.SixthActivity
+import com.example.iqbal_3tib.Home.Pertemuan9.NinthActivity
+import com.example.iqbal_3tib.Home.Pertemuan_10.TenthActivity
 import com.example.iqbal_3tib.LoginActivity
 import com.example.iqbal_3tib.R
 import com.example.iqbal_3tib.databinding.FragmentHomeBinding
@@ -72,6 +74,14 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), SixthActivity::class.java)
             startActivity(intent)
         }
+        binding.btntosix.setOnClickListener {
+            val intent = Intent(requireContext(), NinthActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnToSepuluh.setOnClickListener {
+            val intent = Intent(requireContext(), TenthActivity::class.java)
+            startActivity(intent)
+            }
         binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(requireContext())
                 .setTitle("Logout")
